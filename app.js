@@ -25,16 +25,16 @@
 
 
 var userInput = prompt("Enter a word!")
-var reversedWord;
-for (var i = 0; i >= userInput.length; i--) {
-    reversedWord = userInput[i]
+var reversedWord = [];
+var j = 0;
+for (var i = userInput.length - 1; i >= 0; i--) {
+    reversedWord[i] = userInput[j++]
 }
-if (userInput === reversedWord) {
-    alert("This is not a Palindrome")
+if (userInput[0] == reversedWord[0]) {
+    alert("Pallindrome")
 } else {
-    alert("This is a Palindrome")
+    alert("Not a Pallindrome")
 }
-
 // var t=prompt("Enter the word");
 // var a=[];
 // var j=0;
